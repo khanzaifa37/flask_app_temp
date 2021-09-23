@@ -41,14 +41,6 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 #from flask_restful import Api,Resource,reqparse
 
 app = Flask(__name__)
-#api=Api(app)
-# app.config['MAIL_SERVER']='smtp.gmail.com'
-# app.config['MAIL_PORT'] = 465
-# app.config['MAIL_USERNAME'] = 'dig.sec.solutions@gmail.com'
-# app.config['MAIL_PASSWORD'] = 'digsec101'
-# app.config['MAIL_USE_TLS'] = False
-# app.config['MAIL_USE_SSL'] = True
-
 mail=Mail(app)
 
 def allowed_file(filename):
